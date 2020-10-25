@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game - ConectaPuntos</title>
+		<meta name="description" content="Desarrollo del juego ConectaPuntos">
+		<link rel="shortcut icon" href="iconWeb.png">
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="stylesGame.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="catIcon.png">
+			G A T O
+			<img src="catIcon.png" id="img2"> 
+		</header>
+		<nav>
+			<a href="Home.html">Home</a>
+			<label> > </label>
+			<a href="#">Game</a>
+		</nav>
+		<!--DATOS JUGADORES-->
+		<section id="Jugadores">
+			<!--JUGADOR 1-->
+			<section class="Jugador" id="J1">
+				<div class="Puntuacion">
+					<label id = "PJ1" name = "PuntuacionJ1"> 0 </label>
+				</div>
+				<div>
+					<label id="nJ1">JUGADOR 1:</label>
+				</div>
+				<div>
+					<input  id="colorJ1" type="color" disabled="" name="colorJ1" value = "#FF0000">
+				</div>
+				<div>
+					<label id="tJ1">Esperando....</label>
+				</div>
+				<div id="profileColor1" class="profileColor"></div>
+			</section>
+			<!--JUGADOR 2-->
+			<section class="Jugador" id="J2">
+				<div class="Puntuacion">
+					<label id="PJ2" class="PuntuacionJ2"> 0 </label>
+				</div>
+				<div>
+					<label id="nJ2">JUGADOR 2:</label>
+				</div>
+				<div>
+					<input id="colorJ2" type="color" disabled="" name="colorJ2" value = "#2157a3">
+				</div>
+				<div>
+					<label id="tJ2">Tu turno!!!!</label>
+				</div>
+				<div id="profileColor2" class="profileColor"></div>
+			</section>
+			<!-- TABLERO -->
+			<section id="Tablero">
+				<div  class ="XY">
+					<div id="X0Y0" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X0Y1" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X0Y2" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X1Y0" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X1Y1" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X1Y2" class="circulo"></div>
+				</div>
+				<div  class ="XY">
+					<div id="X2Y0" class="circulo"></div>
+				</div>
+				<div class ="XY">
+					<div  id="X2Y1" class="circulo"></div>
+				</div>
+				<div class ="XY">
+					<div id="X2Y2" class="circulo"></div>
+				</div>
+				
+			</section>
+		</section>
+		<section id="botones">
+			<button id="bReiniciar" class="buttons">Reiniciar Puntuacion</button>
+			<button id="bHome" class="buttons">Home</button>
+		</section>
+		<script type = "text/javascript" src="Game.js"></script>
+	</body>
+</html>
